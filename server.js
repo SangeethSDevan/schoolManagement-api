@@ -2,7 +2,7 @@ const app=require("./app")
 const connection =require("./Model/connection")
 require("dotenv").config()
 
-const PORT=process.env.env||3000
+const PORT=process.env.PORT||3000
 
 const createTableQuery=`CREATE TABLE IF NOT EXISTS schools(
     id INT AUTO_INCREMENT PRIMARY KEY,
